@@ -1,0 +1,774 @@
+{
+  "contractName": "HumainChainIdLogic",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "humanHashesExternalStorage",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_externalStorageAddress",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "humanDataHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "register",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060405160208061026083398101806040528101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506101dd806100836000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c4600d3114610051578063e1fa8e84146100a8575b600080fd5b34801561005d57600080fd5b506100666100d9565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100b457600080fd5b506100d760048036038101908080356000191690602001909291905050506100fe565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16631efdcc95826040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808260001916600019168152602001915050600060405180830381600087803b15801561019657600080fd5b505af11580156101aa573d6000803e3d6000fd5b50505050505600a165627a7a72305820383d2862440469e9527195d9e8a191798dd49582ebde3dc4f8b7db499978f5760029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c4600d3114610051578063e1fa8e84146100a8575b600080fd5b34801561005d57600080fd5b506100666100d9565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100b457600080fd5b506100d760048036038101908080356000191690602001909291905050506100fe565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16631efdcc95826040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808260001916600019168152602001915050600060405180830381600087803b15801561019657600080fd5b505af11580156101aa573d6000803e3d6000fd5b50505050505600a165627a7a72305820383d2862440469e9527195d9e8a191798dd49582ebde3dc4f8b7db499978f5760029",
+  "sourceMap": "64:594:0:-;;;247:134;8:9:-1;5:2;;;30:1;27;20:12;5:2;247:134:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;350:23;302:26;;:72;;;;;;;;;;;;;;;;;;247:134;64:594;;;;;;",
+  "deployedSourceMap": "64:594:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;98:52;;8:9:-1;5:2;;;30:1;27;20:12;5:2;98:52:0;;;;;;;;;;;;;;;;;;;;;;;;;;;536:119;;8:9:-1;5:2;;;30:1;27;20:12;5:2;536:119:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;98:52;;;;;;;;;;;;;:::o;536:119::-;594:26;;;;;;;;;;;:39;;;634:13;594:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;594:54:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;594:54:0;;;;536:119;:::o",
+  "source": "pragma solidity 0.4.24;\nimport './lib/HumanHashesStorage.sol';\n\ncontract HumainChainIdLogic {\n    HumanHashesStorage public humanHashesExternalStorage;\n\n    // mapping(bytes32 => bool) public humanHashes;\n    // uint public humanHashesCount;\n\n    constructor(address _externalStorageAddress) {\n        humanHashesExternalStorage = HumanHashesStorage(_externalStorageAddress);\n    }\n\n    // function addHumanHash(bytes32 humanDataHash) private {\n    //     humanHashesCount++;\n    //     humanHashes[humanDataHash] = true;\n    // }\n\n    function register(bytes32 humanDataHash) public {\n        humanHashesExternalStorage.addHumanHash(humanDataHash);\n    }\n\n}",
+  "sourcePath": "/Users/thomasvandercam/Documents/ADNEOM/BlockChain/dapp-human-chainid/blockchain/contracts/HumainChainIdLogic.sol",
+  "ast": {
+    "absolutePath": "/Users/thomasvandercam/Documents/ADNEOM/BlockChain/dapp-human-chainid/blockchain/contracts/HumainChainIdLogic.sol",
+    "exportedSymbols": {
+      "HumainChainIdLogic": [
+        29
+      ]
+    },
+    "id": 30,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "absolutePath": "/Users/thomasvandercam/Documents/ADNEOM/BlockChain/dapp-human-chainid/blockchain/contracts/lib/HumanHashesStorage.sol",
+        "file": "./lib/HumanHashesStorage.sol",
+        "id": 2,
+        "nodeType": "ImportDirective",
+        "scope": 30,
+        "sourceUnit": 65,
+        "src": "24:38:0",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 29,
+        "linearizedBaseContracts": [
+          29
+        ],
+        "name": "HumainChainIdLogic",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4,
+            "name": "humanHashesExternalStorage",
+            "nodeType": "VariableDeclaration",
+            "scope": 29,
+            "src": "98:52:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_HumanHashesStorage_$64",
+              "typeString": "contract HumanHashesStorage"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 3,
+              "name": "HumanHashesStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 64,
+              "src": "98:18:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_HumanHashesStorage_$64",
+                "typeString": "contract HumanHashesStorage"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 15,
+              "nodeType": "Block",
+              "src": "292:89:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 13,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 9,
+                      "name": "humanHashesExternalStorage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4,
+                      "src": "302:26:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_HumanHashesStorage_$64",
+                        "typeString": "contract HumanHashesStorage"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 11,
+                          "name": "_externalStorageAddress",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 6,
+                          "src": "350:23:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 10,
+                        "name": "HumanHashesStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 64,
+                        "src": "331:18:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_HumanHashesStorage_$64_$",
+                          "typeString": "type(contract HumanHashesStorage)"
+                        }
+                      },
+                      "id": 12,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "331:43:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_HumanHashesStorage_$64",
+                        "typeString": "contract HumanHashesStorage"
+                      }
+                    },
+                    "src": "302:72:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_HumanHashesStorage_$64",
+                      "typeString": "contract HumanHashesStorage"
+                    }
+                  },
+                  "id": 14,
+                  "nodeType": "ExpressionStatement",
+                  "src": "302:72:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 16,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6,
+                  "name": "_externalStorageAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 16,
+                  "src": "259:31:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "259:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "258:33:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 8,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "292:0:0"
+            },
+            "scope": 29,
+            "src": "247:134:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 27,
+              "nodeType": "Block",
+              "src": "584:71:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 24,
+                        "name": "humanDataHash",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 18,
+                        "src": "634:13:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 21,
+                        "name": "humanHashesExternalStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4,
+                        "src": "594:26:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_HumanHashesStorage_$64",
+                          "typeString": "contract HumanHashesStorage"
+                        }
+                      },
+                      "id": 23,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "addHumanHash",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 63,
+                      "src": "594:39:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$returns$__$",
+                        "typeString": "function (bytes32) external"
+                      }
+                    },
+                    "id": 25,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "594:54:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 26,
+                  "nodeType": "ExpressionStatement",
+                  "src": "594:54:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 28,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "register",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 18,
+                  "name": "humanDataHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 28,
+                  "src": "554:21:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 17,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "554:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "553:23:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 20,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "584:0:0"
+            },
+            "scope": 29,
+            "src": "536:119:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 30,
+        "src": "64:594:0"
+      }
+    ],
+    "src": "0:658:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/thomasvandercam/Documents/ADNEOM/BlockChain/dapp-human-chainid/blockchain/contracts/HumainChainIdLogic.sol",
+    "exportedSymbols": {
+      "HumainChainIdLogic": [
+        29
+      ]
+    },
+    "id": 30,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "absolutePath": "/Users/thomasvandercam/Documents/ADNEOM/BlockChain/dapp-human-chainid/blockchain/contracts/lib/HumanHashesStorage.sol",
+        "file": "./lib/HumanHashesStorage.sol",
+        "id": 2,
+        "nodeType": "ImportDirective",
+        "scope": 30,
+        "sourceUnit": 65,
+        "src": "24:38:0",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 29,
+        "linearizedBaseContracts": [
+          29
+        ],
+        "name": "HumainChainIdLogic",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4,
+            "name": "humanHashesExternalStorage",
+            "nodeType": "VariableDeclaration",
+            "scope": 29,
+            "src": "98:52:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_HumanHashesStorage_$64",
+              "typeString": "contract HumanHashesStorage"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 3,
+              "name": "HumanHashesStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 64,
+              "src": "98:18:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_HumanHashesStorage_$64",
+                "typeString": "contract HumanHashesStorage"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 15,
+              "nodeType": "Block",
+              "src": "292:89:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 13,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 9,
+                      "name": "humanHashesExternalStorage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4,
+                      "src": "302:26:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_HumanHashesStorage_$64",
+                        "typeString": "contract HumanHashesStorage"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 11,
+                          "name": "_externalStorageAddress",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 6,
+                          "src": "350:23:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 10,
+                        "name": "HumanHashesStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 64,
+                        "src": "331:18:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_HumanHashesStorage_$64_$",
+                          "typeString": "type(contract HumanHashesStorage)"
+                        }
+                      },
+                      "id": 12,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "331:43:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_HumanHashesStorage_$64",
+                        "typeString": "contract HumanHashesStorage"
+                      }
+                    },
+                    "src": "302:72:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_HumanHashesStorage_$64",
+                      "typeString": "contract HumanHashesStorage"
+                    }
+                  },
+                  "id": 14,
+                  "nodeType": "ExpressionStatement",
+                  "src": "302:72:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 16,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6,
+                  "name": "_externalStorageAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 16,
+                  "src": "259:31:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "259:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "258:33:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 8,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "292:0:0"
+            },
+            "scope": 29,
+            "src": "247:134:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 27,
+              "nodeType": "Block",
+              "src": "584:71:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 24,
+                        "name": "humanDataHash",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 18,
+                        "src": "634:13:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 21,
+                        "name": "humanHashesExternalStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4,
+                        "src": "594:26:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_HumanHashesStorage_$64",
+                          "typeString": "contract HumanHashesStorage"
+                        }
+                      },
+                      "id": 23,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "addHumanHash",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 63,
+                      "src": "594:39:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$returns$__$",
+                        "typeString": "function (bytes32) external"
+                      }
+                    },
+                    "id": 25,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "594:54:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 26,
+                  "nodeType": "ExpressionStatement",
+                  "src": "594:54:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 28,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "register",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 18,
+                  "name": "humanDataHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 28,
+                  "src": "554:21:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 17,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "554:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "553:23:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 20,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "584:0:0"
+            },
+            "scope": 29,
+            "src": "536:119:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 30,
+        "src": "64:594:0"
+      }
+    ],
+    "src": "0:658:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x75d91c2e4ec0f508378fc946a563e72a2fdc9d1f",
+      "transactionHash": "0x4b8aadb2538bbcbe509f8cd68804c5b246c5bb813e7b97b4b8d7030940219cb0"
+    }
+  },
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-11-21T14:39:43.603Z"
+}
