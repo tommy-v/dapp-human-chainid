@@ -1,0 +1,7 @@
+version: '2'
+services:
+  bootnode:
+    build: bootnode
+    environment:
+      - PRIVATE_KEY=cc972f68f3353e8afd9ea0addb05ea8675322a62cc546df0c32ffa9ed79e1542
+    
