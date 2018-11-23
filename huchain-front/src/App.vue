@@ -35,6 +35,15 @@
 <script>
 // import hasher
 import { hashString } from "./hasher";
+import { web3 } from "./web3";
+import data from "../../blockchain/build/contracts/HumainChainIdLogic";
+
+alert(
+    new web3.eth.Contract(
+        data.abi,
+        "0x1eb7d503d5193cbbc1e8280feac65f417765a0cb"
+    )
+);
 // start
 export default {
     name: "app",

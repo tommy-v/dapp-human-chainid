@@ -55,31 +55,31 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b506101cf806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631efdcc951461005c5780636c23a0541461008d578063d096ccce146100b8575b600080fd5b34801561006857600080fd5b5061008b6004803603810190808035600019169060200190929190505050610101565b005b34801561009957600080fd5b506100a261017d565b6040518082815260200191505060405180910390f35b3480156100c457600080fd5b506100e76004803603810190808035600019169060200190929190505050610183565b604051808215151515815260200191505060405180910390f35b600080826000191660001916815260200190815260200160002060009054906101000a900460ff1615151561013557600080fd5b6001600081548092919060010191905055506001600080836000191660001916815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b60015481565b60006020528060005260406000206000915054906101000a900460ff16815600a165627a7a72305820a44e63a3752972750688fea981a2b8d8893d40491276273fe96fde03e126a8650029",
-  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631efdcc951461005c5780636c23a0541461008d578063d096ccce146100b8575b600080fd5b34801561006857600080fd5b5061008b6004803603810190808035600019169060200190929190505050610101565b005b34801561009957600080fd5b506100a261017d565b6040518082815260200191505060405180910390f35b3480156100c457600080fd5b506100e76004803603810190808035600019169060200190929190505050610183565b604051808215151515815260200191505060405180910390f35b600080826000191660001916815260200190815260200160002060009054906101000a900460ff1615151561013557600080fd5b6001600081548092919060010191905055506001600080836000191660001916815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b60015481565b60006020528060005260406000206000915054906101000a900460ff16815600a165627a7a72305820a44e63a3752972750688fea981a2b8d8893d40491276273fe96fde03e126a8650029",
-  "sourceMap": "25:477:1:-;;;143:16;8:9:-1;5:2;;;30:1;27;20:12;5:2;143:16:1;25:477;;;;;;",
-  "deployedSourceMap": "25:477:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;167:176;;8:9:-1;5:2;;;30:1;27;20:12;5:2;167:176:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;108:28;;8:9:-1;5:2;;;30:1;27;20:12;5:2;108:28:1;;;;;;;;;;;;;;;;;;;;;;;59:43;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:43:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;167:176;238:11;:26;250:13;238:26;;;;;;;;;;;;;;;;;;;;;;;;;;;237:27;229:36;;;;;;;;275:16;;:18;;;;;;;;;;;;;332:4;303:11;:26;315:13;303:26;;;;;;;;;;;;;;;;;;:33;;;;;;;;;;;;;;;;;;167:176;:::o;108:28::-;;;;:::o;59:43::-;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "bytecode": "0x608060405234801561001057600080fd5b506101cf806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631efdcc951461005c5780636c23a0541461008d578063d096ccce146100b8575b600080fd5b34801561006857600080fd5b5061008b6004803603810190808035600019169060200190929190505050610101565b005b34801561009957600080fd5b506100a261017d565b6040518082815260200191505060405180910390f35b3480156100c457600080fd5b506100e76004803603810190808035600019169060200190929190505050610183565b604051808215151515815260200191505060405180910390f35b600080826000191660001916815260200190815260200160002060009054906101000a900460ff1615151561013557600080fd5b6001600081548092919060010191905055506001600080836000191660001916815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b60015481565b60006020528060005260406000206000915054906101000a900460ff16815600a165627a7a72305820315da0ea2318afc3d8a31a32513dd601b167a16aefc9183f7aea56ac45c7d6c30029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631efdcc951461005c5780636c23a0541461008d578063d096ccce146100b8575b600080fd5b34801561006857600080fd5b5061008b6004803603810190808035600019169060200190929190505050610101565b005b34801561009957600080fd5b506100a261017d565b6040518082815260200191505060405180910390f35b3480156100c457600080fd5b506100e76004803603810190808035600019169060200190929190505050610183565b604051808215151515815260200191505060405180910390f35b600080826000191660001916815260200190815260200160002060009054906101000a900460ff1615151561013557600080fd5b6001600081548092919060010191905055506001600080836000191660001916815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b60015481565b60006020528060005260406000206000915054906101000a900460ff16815600a165627a7a72305820315da0ea2318afc3d8a31a32513dd601b167a16aefc9183f7aea56ac45c7d6c30029",
+  "sourceMap": "25:477:2:-;;;143:16;8:9:-1;5:2;;;30:1;27;20:12;5:2;143:16:2;25:477;;;;;;",
+  "deployedSourceMap": "25:477:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;167:176;;8:9:-1;5:2;;;30:1;27;20:12;5:2;167:176:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;108:28;;8:9:-1;5:2;;;30:1;27;20:12;5:2;108:28:2;;;;;;;;;;;;;;;;;;;;;;;59:43;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:43:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;167:176;238:11;:26;250:13;238:26;;;;;;;;;;;;;;;;;;;;;;;;;;;237:27;229:36;;;;;;;;275:16;;:18;;;;;;;;;;;;;332:4;303:11;:26;315:13;303:26;;;;;;;;;;;;;;;;;;:33;;;;;;;;;;;;;;;;;;167:176;:::o;108:28::-;;;;:::o;59:43::-;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity 0.4.24;\n\ncontract HumanHashesStorage {\n    mapping(bytes32 => bool) public humanHashes;\n    uint public humanHashesCount;\n\n    constructor() {}\n  \n    function addHumanHash(bytes32 humanDataHash) public {\n        require(!humanHashes[humanDataHash]);\n        humanHashesCount++;\n        humanHashes[humanDataHash] = true;\n    }\n\n    // function register(bytes32 humanDataHash) public {\n    //     require(!humanHashes[humanDataHash]);\n    //     addHumanHash(humanDataHash);\n    // }\n\n}",
-  "sourcePath": "/Users/thomasvandercam/Documents/ADNEOM/BlockChain/dapp-human-chainid/blockchain/contracts/lib/HumanHashesStorage.sol",
+  "sourcePath": "/home/adrien/projects/dapp-human-chainid/blockchain/contracts/lib/HumanHashesStorage.sol",
   "ast": {
-    "absolutePath": "/Users/thomasvandercam/Documents/ADNEOM/BlockChain/dapp-human-chainid/blockchain/contracts/lib/HumanHashesStorage.sol",
+    "absolutePath": "/home/adrien/projects/dapp-human-chainid/blockchain/contracts/lib/HumanHashesStorage.sol",
     "exportedSymbols": {
       "HumanHashesStorage": [
-        64
+        121
       ]
     },
-    "id": 65,
+    "id": 122,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 31,
+        "id": 88,
         "literals": [
           "solidity",
           "0.4",
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:1"
+        "src": "0:23:2"
       },
       {
         "baseContracts": [],
@@ -87,20 +87,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 64,
+        "id": 121,
         "linearizedBaseContracts": [
-          64
+          121
         ],
         "name": "HumanHashesStorage",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 35,
+            "id": 92,
             "name": "humanHashes",
             "nodeType": "VariableDeclaration",
-            "scope": 64,
-            "src": "59:43:1",
+            "scope": 121,
+            "src": "59:43:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -108,28 +108,28 @@
               "typeString": "mapping(bytes32 => bool)"
             },
             "typeName": {
-              "id": 34,
+              "id": 91,
               "keyType": {
-                "id": 32,
+                "id": 89,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
-                "src": "67:7:1",
+                "src": "67:7:2",
                 "typeDescriptions": {
                   "typeIdentifier": "t_bytes32",
                   "typeString": "bytes32"
                 }
               },
               "nodeType": "Mapping",
-              "src": "59:24:1",
+              "src": "59:24:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
                 "typeString": "mapping(bytes32 => bool)"
               },
               "valueType": {
-                "id": 33,
+                "id": 90,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
-                "src": "78:4:1",
+                "src": "78:4:2",
                 "typeDescriptions": {
                   "typeIdentifier": "t_bool",
                   "typeString": "bool"
@@ -141,11 +141,11 @@
           },
           {
             "constant": false,
-            "id": 37,
+            "id": 94,
             "name": "humanHashesCount",
             "nodeType": "VariableDeclaration",
-            "scope": 64,
-            "src": "108:28:1",
+            "scope": 121,
+            "src": "108:28:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -153,10 +153,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 36,
+              "id": 93,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "108:4:1",
+              "src": "108:4:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -167,13 +167,13 @@
           },
           {
             "body": {
-              "id": 40,
+              "id": 97,
               "nodeType": "Block",
-              "src": "157:2:1",
+              "src": "157:2:2",
               "statements": []
             },
             "documentation": null,
-            "id": 41,
+            "id": 98,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -181,29 +181,29 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 38,
+              "id": 95,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "154:2:1"
+              "src": "154:2:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 39,
+              "id": 96,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "157:0:1"
+              "src": "157:0:2"
             },
-            "scope": 64,
-            "src": "143:16:1",
+            "scope": 121,
+            "src": "143:16:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 62,
+              "id": 119,
               "nodeType": "Block",
-              "src": "219:124:1",
+              "src": "219:124:2",
               "statements": [
                 {
                   "expression": {
@@ -211,7 +211,7 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 50,
+                        "id": 107,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -219,31 +219,31 @@
                         "nodeType": "UnaryOperation",
                         "operator": "!",
                         "prefix": true,
-                        "src": "237:27:1",
+                        "src": "237:27:2",
                         "subExpression": {
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 47,
+                            "id": 104,
                             "name": "humanHashes",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 35,
-                            "src": "238:11:1",
+                            "referencedDeclaration": 92,
+                            "src": "238:11:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
                               "typeString": "mapping(bytes32 => bool)"
                             }
                           },
-                          "id": 49,
+                          "id": 106,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 48,
+                            "id": 105,
                             "name": "humanDataHash",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 43,
-                            "src": "250:13:1",
+                            "referencedDeclaration": 100,
+                            "src": "250:13:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
                               "typeString": "bytes32"
@@ -254,7 +254,7 @@
                           "isPure": false,
                           "lValueRequested": false,
                           "nodeType": "IndexAccess",
-                          "src": "238:26:1",
+                          "src": "238:26:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
@@ -273,21 +273,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 46,
+                      "id": 103,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        82,
-                        83
+                        139,
+                        140
                       ],
-                      "referencedDeclaration": 82,
-                      "src": "229:7:1",
+                      "referencedDeclaration": 139,
+                      "src": "229:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 51,
+                    "id": 108,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -295,20 +295,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "229:36:1",
+                    "src": "229:36:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 52,
+                  "id": 109,
                   "nodeType": "ExpressionStatement",
-                  "src": "229:36:1"
+                  "src": "229:36:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 54,
+                    "id": 111,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -316,15 +316,15 @@
                     "nodeType": "UnaryOperation",
                     "operator": "++",
                     "prefix": false,
-                    "src": "275:18:1",
+                    "src": "275:18:2",
                     "subExpression": {
                       "argumentTypes": null,
-                      "id": 53,
+                      "id": 110,
                       "name": "humanHashesCount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 37,
-                      "src": "275:16:1",
+                      "referencedDeclaration": 94,
+                      "src": "275:16:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -335,14 +335,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 55,
+                  "id": 112,
                   "nodeType": "ExpressionStatement",
-                  "src": "275:18:1"
+                  "src": "275:18:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 60,
+                    "id": 117,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -351,26 +351,26 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 56,
+                        "id": 113,
                         "name": "humanHashes",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 35,
-                        "src": "303:11:1",
+                        "referencedDeclaration": 92,
+                        "src": "303:11:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
                           "typeString": "mapping(bytes32 => bool)"
                         }
                       },
-                      "id": 58,
+                      "id": 115,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 57,
+                        "id": 114,
                         "name": "humanDataHash",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 43,
-                        "src": "315:13:1",
+                        "referencedDeclaration": 100,
+                        "src": "315:13:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -381,7 +381,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "303:26:1",
+                      "src": "303:26:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -392,14 +392,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 59,
+                      "id": 116,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "bool",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "332:4:1",
+                      "src": "332:4:2",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -407,20 +407,20 @@
                       },
                       "value": "true"
                     },
-                    "src": "303:33:1",
+                    "src": "303:33:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 61,
+                  "id": 118,
                   "nodeType": "ExpressionStatement",
-                  "src": "303:33:1"
+                  "src": "303:33:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 63,
+            "id": 120,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -428,16 +428,16 @@
             "name": "addHumanHash",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 44,
+              "id": 101,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 43,
+                  "id": 100,
                   "name": "humanDataHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 63,
-                  "src": "189:21:1",
+                  "scope": 120,
+                  "src": "189:21:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -445,10 +445,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 42,
+                    "id": 99,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "189:7:1",
+                    "src": "189:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -458,47 +458,47 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "188:23:1"
+              "src": "188:23:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 45,
+              "id": 102,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "219:0:1"
+              "src": "219:0:2"
             },
-            "scope": 64,
-            "src": "167:176:1",
+            "scope": 121,
+            "src": "167:176:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 65,
-        "src": "25:477:1"
+        "scope": 122,
+        "src": "25:477:2"
       }
     ],
-    "src": "0:502:1"
+    "src": "0:502:2"
   },
   "legacyAST": {
-    "absolutePath": "/Users/thomasvandercam/Documents/ADNEOM/BlockChain/dapp-human-chainid/blockchain/contracts/lib/HumanHashesStorage.sol",
+    "absolutePath": "/home/adrien/projects/dapp-human-chainid/blockchain/contracts/lib/HumanHashesStorage.sol",
     "exportedSymbols": {
       "HumanHashesStorage": [
-        64
+        121
       ]
     },
-    "id": 65,
+    "id": 122,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 31,
+        "id": 88,
         "literals": [
           "solidity",
           "0.4",
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:1"
+        "src": "0:23:2"
       },
       {
         "baseContracts": [],
@@ -506,20 +506,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 64,
+        "id": 121,
         "linearizedBaseContracts": [
-          64
+          121
         ],
         "name": "HumanHashesStorage",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 35,
+            "id": 92,
             "name": "humanHashes",
             "nodeType": "VariableDeclaration",
-            "scope": 64,
-            "src": "59:43:1",
+            "scope": 121,
+            "src": "59:43:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -527,28 +527,28 @@
               "typeString": "mapping(bytes32 => bool)"
             },
             "typeName": {
-              "id": 34,
+              "id": 91,
               "keyType": {
-                "id": 32,
+                "id": 89,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
-                "src": "67:7:1",
+                "src": "67:7:2",
                 "typeDescriptions": {
                   "typeIdentifier": "t_bytes32",
                   "typeString": "bytes32"
                 }
               },
               "nodeType": "Mapping",
-              "src": "59:24:1",
+              "src": "59:24:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
                 "typeString": "mapping(bytes32 => bool)"
               },
               "valueType": {
-                "id": 33,
+                "id": 90,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
-                "src": "78:4:1",
+                "src": "78:4:2",
                 "typeDescriptions": {
                   "typeIdentifier": "t_bool",
                   "typeString": "bool"
@@ -560,11 +560,11 @@
           },
           {
             "constant": false,
-            "id": 37,
+            "id": 94,
             "name": "humanHashesCount",
             "nodeType": "VariableDeclaration",
-            "scope": 64,
-            "src": "108:28:1",
+            "scope": 121,
+            "src": "108:28:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -572,10 +572,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 36,
+              "id": 93,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "108:4:1",
+              "src": "108:4:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -586,13 +586,13 @@
           },
           {
             "body": {
-              "id": 40,
+              "id": 97,
               "nodeType": "Block",
-              "src": "157:2:1",
+              "src": "157:2:2",
               "statements": []
             },
             "documentation": null,
-            "id": 41,
+            "id": 98,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -600,29 +600,29 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 38,
+              "id": 95,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "154:2:1"
+              "src": "154:2:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 39,
+              "id": 96,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "157:0:1"
+              "src": "157:0:2"
             },
-            "scope": 64,
-            "src": "143:16:1",
+            "scope": 121,
+            "src": "143:16:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 62,
+              "id": 119,
               "nodeType": "Block",
-              "src": "219:124:1",
+              "src": "219:124:2",
               "statements": [
                 {
                   "expression": {
@@ -630,7 +630,7 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 50,
+                        "id": 107,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -638,31 +638,31 @@
                         "nodeType": "UnaryOperation",
                         "operator": "!",
                         "prefix": true,
-                        "src": "237:27:1",
+                        "src": "237:27:2",
                         "subExpression": {
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 47,
+                            "id": 104,
                             "name": "humanHashes",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 35,
-                            "src": "238:11:1",
+                            "referencedDeclaration": 92,
+                            "src": "238:11:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
                               "typeString": "mapping(bytes32 => bool)"
                             }
                           },
-                          "id": 49,
+                          "id": 106,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 48,
+                            "id": 105,
                             "name": "humanDataHash",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 43,
-                            "src": "250:13:1",
+                            "referencedDeclaration": 100,
+                            "src": "250:13:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
                               "typeString": "bytes32"
@@ -673,7 +673,7 @@
                           "isPure": false,
                           "lValueRequested": false,
                           "nodeType": "IndexAccess",
-                          "src": "238:26:1",
+                          "src": "238:26:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
@@ -692,21 +692,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 46,
+                      "id": 103,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        82,
-                        83
+                        139,
+                        140
                       ],
-                      "referencedDeclaration": 82,
-                      "src": "229:7:1",
+                      "referencedDeclaration": 139,
+                      "src": "229:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 51,
+                    "id": 108,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -714,20 +714,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "229:36:1",
+                    "src": "229:36:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 52,
+                  "id": 109,
                   "nodeType": "ExpressionStatement",
-                  "src": "229:36:1"
+                  "src": "229:36:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 54,
+                    "id": 111,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -735,15 +735,15 @@
                     "nodeType": "UnaryOperation",
                     "operator": "++",
                     "prefix": false,
-                    "src": "275:18:1",
+                    "src": "275:18:2",
                     "subExpression": {
                       "argumentTypes": null,
-                      "id": 53,
+                      "id": 110,
                       "name": "humanHashesCount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 37,
-                      "src": "275:16:1",
+                      "referencedDeclaration": 94,
+                      "src": "275:16:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -754,14 +754,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 55,
+                  "id": 112,
                   "nodeType": "ExpressionStatement",
-                  "src": "275:18:1"
+                  "src": "275:18:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 60,
+                    "id": 117,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -770,26 +770,26 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 56,
+                        "id": 113,
                         "name": "humanHashes",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 35,
-                        "src": "303:11:1",
+                        "referencedDeclaration": 92,
+                        "src": "303:11:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
                           "typeString": "mapping(bytes32 => bool)"
                         }
                       },
-                      "id": 58,
+                      "id": 115,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 57,
+                        "id": 114,
                         "name": "humanDataHash",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 43,
-                        "src": "315:13:1",
+                        "referencedDeclaration": 100,
+                        "src": "315:13:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -800,7 +800,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "303:26:1",
+                      "src": "303:26:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -811,14 +811,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 59,
+                      "id": 116,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "bool",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "332:4:1",
+                      "src": "332:4:2",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -826,20 +826,20 @@
                       },
                       "value": "true"
                     },
-                    "src": "303:33:1",
+                    "src": "303:33:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 61,
+                  "id": 118,
                   "nodeType": "ExpressionStatement",
-                  "src": "303:33:1"
+                  "src": "303:33:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 63,
+            "id": 120,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -847,16 +847,16 @@
             "name": "addHumanHash",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 44,
+              "id": 101,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 43,
+                  "id": 100,
                   "name": "humanDataHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 63,
-                  "src": "189:21:1",
+                  "scope": 120,
+                  "src": "189:21:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -864,10 +864,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 42,
+                    "id": 99,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "189:7:1",
+                    "src": "189:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -877,27 +877,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "188:23:1"
+              "src": "188:23:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 45,
+              "id": 102,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "219:0:1"
+              "src": "219:0:2"
             },
-            "scope": 64,
-            "src": "167:176:1",
+            "scope": 121,
+            "src": "167:176:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 65,
-        "src": "25:477:1"
+        "scope": 122,
+        "src": "25:477:2"
       }
     ],
-    "src": "0:502:1"
+    "src": "0:502:2"
   },
   "compiler": {
     "name": "solc",
@@ -905,5 +905,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-11-21T14:39:43.602Z"
+  "updatedAt": "2018-11-23T14:15:35.889Z"
 }
