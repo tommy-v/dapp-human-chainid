@@ -11,7 +11,7 @@
     "sjcl": "^1.0.8",
     "vue": "^2.5.17",
     "vue-form": "^4.10.1",
-    "web3": "^1.0.0-beta.36"
+    "web3": "^1.0.0-beta.34"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.1.1",
