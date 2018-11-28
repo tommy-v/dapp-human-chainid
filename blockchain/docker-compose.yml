@@ -14,8 +14,6 @@ services:
         options:
             max-size: "1m"
             max-file: "10"
-    networks:
-        - default
   node1:
     build: node
     environment:
@@ -32,6 +30,3 @@ services:
         options:
             max-size: "1m"
             max-file: "10"
-    networks:
-        - default
-      

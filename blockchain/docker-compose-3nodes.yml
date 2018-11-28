@@ -62,5 +62,20 @@ services:
         options:
             max-size: "1m"
             max-file: "10"
-            
+  node4:
+    build: node
+    environment:
+        - WS_SECRET=PASSWORD
+        - ENODE_PUBKEY=58c5ccc392b8ede21738a4db52109fe7adc9c407d20504dcd5388999d36b86f8c5de538aa96cb917c221df10ba1a56f3235c8651fa7e6e6994e8ca2a6daeaf60
+        - PRIVATE_KEY=c8aff73b8b91c92998402cdcc3309f59a611c699dfaabe40c7d71f0637bfb467
+        - ETHERBASE=0xDFC28bc383f2A9cBE246EB6b0a8096309C39e1Ad
+    volumes:
+        - ./config/genesis-3nodes.json:/genesis.json:ro
+    depends_on:
+        - bootnode
+    logging:
+        driver: "json-file"
+        options:
+            max-size: "1m"
+            max-file: "10"
       
