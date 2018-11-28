@@ -15,14 +15,14 @@ fi
 
 gethcmd="/usr/local/bin/geth --datadir "${DATA_DIR}" --cache 512"
 bootnodeip=`dig +short "${BOOTNODE_NAME}" | head -n 1`
-# ethstatsip=`dig +short "${ETHSTATS_NAME}" | head -n 1`
+ethstatsip=`dig +short "${ETHSTATS_NAME}" | head -n 1`
 
-# if [ x"${ethstatsip}" != "x" ] && [ x"${WS_SECRET}" != "x" ]; then
-#   echo "Reporting stats to ${ethstatsip}"
-#   statsopts="--ethstats ${HOSTNAME}:${WS_SECRET}@${ethstatsip}:3000"
-# else
-#   echo "Not reporting stats, ethstats not present or WS_SECRET not set"
-# fi
+if [ x"${ethstatsip}" != "x" ] && [ x"${WS_SECRET}" != "x" ]; then
+  echo "Reporting stats to ${ethstatsip}"
+  statsopts="--ethstats ${HOSTNAME}:${WS_SECRET}@${ethstatsip}:3000"
+else
+  echo "Not reporting stats, ethstats not present or WS_SECRET not set"
+fi
 bootnode_list="enode://${ENODE_PUBKEY}@${bootnodeip}:30303?discport=30301"
 echo "${PASSWORD}" > "${password_file}"
 

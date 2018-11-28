@@ -4,16 +4,18 @@ services:
     build: bootnode
     environment:
       - PRIVATE_KEY=159000ce222da308fda7b7258fd8c8ef1e74fca1f71bc6c455ce6504d57e4cdb
-  # ethstats:
-  #       build: ethstats
-  #       environment:
-  #         - WS_SECRET=PASSWORD
-  #         - VIRTUAL_HOST=localhost
-  #       logging:
-  #           driver: "json-file"
-  #           options:
-  #               max-size: "1m"
-  #               max-file: "10"
+  ethstats:
+    build: ethstats
+    environment:
+      - WS_SECRET=PASSWORD
+      - VIRTUAL_HOST=localhost
+    logging:
+        driver: "json-file"
+        options:
+            max-size: "1m"
+            max-file: "10"
+    networks:
+        - default
   node1:
     build: node
     environment:
@@ -30,4 +32,6 @@ services:
         options:
             max-size: "1m"
             max-file: "10"
-    
+    networks:
+        - default
+      
