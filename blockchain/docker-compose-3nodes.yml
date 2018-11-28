@@ -1,0 +1,66 @@
+version: '2'
+services:
+  bootnode:
+    build: bootnode
+    environment:
+      - PRIVATE_KEY=159000ce222da308fda7b7258fd8c8ef1e74fca1f71bc6c455ce6504d57e4cdb
+  ethstats:
+    build: ethstats
+    environment:
+      - WS_SECRET=PASSWORD
+      - VIRTUAL_HOST=localhost
+    logging:
+        driver: "json-file"
+        options:
+            max-size: "1m"
+            max-file: "10"
+  node1:
+    build: node
+    environment:
+        - WS_SECRET=PASSWORD
+        - ENODE_PUBKEY=58c5ccc392b8ede21738a4db52109fe7adc9c407d20504dcd5388999d36b86f8c5de538aa96cb917c221df10ba1a56f3235c8651fa7e6e6994e8ca2a6daeaf60
+        - PRIVATE_KEY=9d535eaea48645caeb243f9e3eb761802e537857c19fe3dae88727189cfa4c51
+        - ETHERBASE=0x99af6686A4118BD51FC7023D1A1766a257786b78
+    volumes:
+        - ./config/genesis-3nodes.json:/genesis.json:ro
+    depends_on:
+        - bootnode
+    logging:
+        driver: "json-file"
+        options:
+            max-size: "1m"
+            max-file: "10"
+  node2:
+    build: node
+    environment:
+        - WS_SECRET=PASSWORD
+        - ENODE_PUBKEY=58c5ccc392b8ede21738a4db52109fe7adc9c407d20504dcd5388999d36b86f8c5de538aa96cb917c221df10ba1a56f3235c8651fa7e6e6994e8ca2a6daeaf60
+        - PRIVATE_KEY=4472bf18b23275802b69dd6db35a9ffa71c383edb584cad9b308994f0730b82e
+        - ETHERBASE=0x9731EA1c62D92e52dD86Ee2D14E56b93435CD5c4
+    volumes:
+        - ./config/genesis-3nodes.json:/genesis.json:ro
+    depends_on:
+        - bootnode
+    logging:
+        driver: "json-file"
+        options:
+            max-size: "1m"
+            max-file: "10"
+  node3:
+    build: node
+    environment:
+        - WS_SECRET=PASSWORD
+        - ENODE_PUBKEY=58c5ccc392b8ede21738a4db52109fe7adc9c407d20504dcd5388999d36b86f8c5de538aa96cb917c221df10ba1a56f3235c8651fa7e6e6994e8ca2a6daeaf60
+        - PRIVATE_KEY=8b5dc44b43ff3b12720b710e6e5298419db23af701849047b10bff2b3feb75d7
+        - ETHERBASE=0x2eB2e8EDCD422B8155259b5155eb2b5390d4FfD7
+    volumes:
+        - ./config/genesis-3nodes.json:/genesis.json:ro
+    depends_on:
+        - bootnode
+    logging:
+        driver: "json-file"
+        options:
+            max-size: "1m"
+            max-file: "10"
+            
+      
