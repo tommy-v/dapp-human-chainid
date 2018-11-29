@@ -35,90 +35,85 @@
 </template>
 
 <script>
-import Web3 from 'web3';
+import Web3 from "web3";
 import data from "../../blockchain/build/contracts/HumainChainIdLogic";
-import { createHashString } from './hasher';
+import { createHashString } from "./hasher";
 //initiate contract
 const web3 = new Web3("http://0.0.0.0:8545");
 window.ethereum.enable();
 web3.eth.defaultAccount = web3.eth.accounts[0];
 const huchainContract = new web3.eth.Contract(
-    data.abi,
-    "0x3828faede1d6901b999026a2dc46875af323a966"
+  data.abi,
+  "0x072e3b8b9682a7215316843818acb834706f0b5a"
 );
 // start
 export default {
-    name: "app",
-    components: {},
-    data: function() {
-        return {
-            formstate: {},
-            model: {
-                errormsg: "",
-                resultmsg: "",
-                form: {
-                    firstName: "",
-                    lastName: "",
-                    email: "",
-                    dateBirth: null,
-                    placeBirth: ""
-                }
-            }
-        };
-    },
-    methods: {
-        onSubmit: function() {
-            if (this.formstate.$invalid) {
-                this.model.errormsg = "Form is invalid";
-            } else {
-                // create unique string to person
-                let formString = `${this.model.form.firstName
-                    .toLowerCase()
-                    .replace(
-                        /\s/g,
-                        ""
-                    )}${this.model.form.lastName
-                    .toLowerCase()
-                    .replace(/\s/g, "")}${String(this.model.form.dateBirth)
-                    .toLowerCase()
-                    .replace(
-                        /\s/g,
-                        ""
-                    )}${this.model.form.placeBirth
-                    .toLowerCase()
-                    .replace(/\s/g, "")}`;
-                // send string to hasher to register in shmart contwact
-                let hash = createHashString(formString);
-                huchainContract.methods.register(hash).call((err, result) => { 
-                    if (result) {
-                        this.model.resultmsg = `Result: ${JSON.stringify(result)}`
-                    } else {
-                        if (err) {
-                            this.model.errormsg = `Error: ${JSON.stringify(err)}`
-                        }        
-                    }
-                })
-            }
+  name: "app",
+  components: {},
+  data: function() {
+    return {
+      formstate: {},
+      model: {
+        errormsg: "",
+        resultmsg: "",
+        form: {
+          firstName: "",
+          lastName: "",
+          email: "",
+          dateBirth: null,
+          placeBirth: ""
         }
+      }
+    };
+  },
+  methods: {
+    onSubmit: function() {
+      if (this.formstate.$invalid) {
+        this.model.errormsg = "Form is invalid";
+      } else {
+        // create unique string to person
+        let formString = `${this.model.form.firstName
+          .toLowerCase()
+          .replace(/\s/g, "")}${this.model.form.lastName
+          .toLowerCase()
+          .replace(/\s/g, "")}${String(this.model.form.dateBirth)
+          .toLowerCase()
+          .replace(
+            /\s/g,
+            ""
+          )}${this.model.form.placeBirth.toLowerCase().replace(/\s/g, "")}`;
+        // send string to hasher to register in shmart contwact
+        let hash = createHashString(formString);
+        huchainContract.methods.register(hash).call((err, result) => {
+          if (result) {
+            this.model.resultmsg = `Result: ${JSON.stringify(result)}`;
+          } else {
+            if (err) {
+              this.model.errormsg = `Error: ${JSON.stringify(err)}`;
+            }
+          }
+        });
+      }
     }
+  }
 };
 </script>
 
 <style>
 #app {
-    font-family: "Avenir", Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
-    margin-top: 60px;
-    text-align: center;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin-top: 60px;
+  text-align: center;
 }
 h1 {
-    text-align: center;
-    padding: 50px;
+  text-align: center;
+  padding: 50px;
 }
 input {
-    margin: 5px;
+  margin: 5px;
 }
 </style>
 
