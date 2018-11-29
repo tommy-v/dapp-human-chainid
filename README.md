@@ -16,3 +16,8 @@ This script simply remove ./build and then migrate your contract. If you don't, 
 # Ethstats
 Ethstats is listening via ws:8546
 - Add `--ethstats flag` in your `geth` command inside **node/run.sh**
+
+# Explorer 
+For development purposes: a
+- Add your local machine's **IP** (NOT localhost or 127.0.0.1) inside `config.js`. 
+- In order to avoid a new build (which needs browserify), you can also add it inside `bundle.js` instead of the previous IP mentioned previously inside `config.js`.
