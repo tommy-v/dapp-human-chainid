@@ -1,0 +1,2 @@
+GETH_RPC_URL	= "ws://192.168.1.4:8546";
+APP_HOSTNAME 	= "app";
