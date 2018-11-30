@@ -1,4 +1,4 @@
-import HumanHashStorage from './../build/contracts/HumanHashStorage.json'
+import HumanHashesStorage from './../build/contracts/HumanHashesStorage.json'
 
 const drizzleOptions = {
     web3: {
@@ -9,10 +9,10 @@ const drizzleOptions = {
         }
     },
     contracts: [
-        HumanHashStorage,
+        HumanHashesStorage,
     ],
     events: {
-        HumanHashStorage: ['ProfileCreated', 'ProfileHibernated']
+        HumanHashesStorage: ['ProfileCreated', 'ProfileHibernated']
     },
     polls: {
         accounts: 1500

@@ -89,7 +89,7 @@ class Home extends Component {
 
                     <div className="pure-u-1-1">
                         <h2>HumanHashStorage</h2>
-                        <ContractForm contract="HumanHashStorage" method="registerProfile" labels={['Your Human Hash']}/>
+                        <ContractForm contract="HumanHashesStorage" method="registerProfile" labels={['Your Human Hash']}/>
                         <br /><br />
                     </div>
 
