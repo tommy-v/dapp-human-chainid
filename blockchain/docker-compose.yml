@@ -1,0 +1,32 @@
+version: '2'
+services:
+  bootnode:
+    build: bootnode
+    environment:
+      - PRIVATE_KEY=159000ce222da308fda7b7258fd8c8ef1e74fca1f71bc6c455ce6504d57e4cdb
+  ethstats:
+    build: ethstats
+    environment:
+      - WS_SECRET=PASSWORD
+      - VIRTUAL_HOST=localhost
+    logging:
+        driver: "json-file"
+        options:
+            max-size: "1m"
+            max-file: "10"
+  node1:
+    build: node
+    environment:
+        - WS_SECRET=PASSWORD
+        - ENODE_PUBKEY=58c5ccc392b8ede21738a4db52109fe7adc9c407d20504dcd5388999d36b86f8c5de538aa96cb917c221df10ba1a56f3235c8651fa7e6e6994e8ca2a6daeaf60
+        - PRIVATE_KEY=9d535eaea48645caeb243f9e3eb761802e537857c19fe3dae88727189cfa4c51
+        - ETHERBASE=0x99af6686A4118BD51FC7023D1A1766a257786b78
+    volumes:
+        - ./config/genesis-1nodes.json:/genesis.json:ro
+    depends_on:
+        - bootnode
+    logging:
+        driver: "json-file"
+        options:
+            max-size: "1m"
+            max-file: "10"

@@ -17,7 +17,7 @@ contract HumainChainIdLogic {
     // }
 
     function register(bytes32 humanDataHash) public {
-        humanHashesExternalStorage.addHumanHash(humanDataHash);
+        humanHashesExternalStorage.registerProfile(humanDataHash);
     }
 
 }

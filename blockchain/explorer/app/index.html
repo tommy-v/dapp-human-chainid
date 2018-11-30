@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="ethExplorer" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="ethExplorer" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="ethExplorer" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="ethExplorer" class="no-js"> <!--<![endif]-->
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ethereum Block Explorer</title>
+  <meta name="description" content="An Ethereum (ETH) Block Explorer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://use.fontawesome.com/9376283190.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-dark navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="./#/">ETHER EXPLORER</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a href="./#/">Home</a></li>
+        </ul>
+        <div class="col-sm-3 col-md-3 pull-right">
+            <form class="navbar-form"  ng-controller="mainCtrl" ng-submit="processRequest()" name="search_form" role="search">
+                <div class="input-group">
+                    <input type="text" placeholder="Tx Hash, Address, or Block #" name="requestType" required  ng-model="ethRequest"  class="form-control searchi">
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary btn-blue" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+</nav>
+
+
+  <div ng-view></div>
+
+<!--Core-->
+  <script src="bundle.js"></script>
+
+<!--Controllers-->
+<!--jQuery-->
+
+  <!--Services-->
+    <div id="connectwarning" class="modal fade" role="dialog">
+
+        <div id="connectwarning-dialog" class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <center><div class="modal-header">
+                    <h4 class="modal-title">Could not connect to the blockchain</h4>
+                </div>
+                <div class="modal-body">
+                    <code><p id="modaltext"></p></code>
+                </div></center>
+            </div>
+        </div>
+    </div>
+
+
+<div class="footer styledfoot">
+    <footer><br />
+    </footer>
+</div>
+</body>
+</html>

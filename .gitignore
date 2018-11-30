@@ -1,3 +1,4 @@
 # node modules
 /blockchain/node_modules/
 /front/node_modules
+/blockchain/build/
