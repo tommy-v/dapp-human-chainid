@@ -23,6 +23,8 @@ services:
       
   node1:
     build: node
+    ports:
+      - "8545:8545"
     environment:
         - WS_SECRET=PASSWORD
         - ENODE_PUBKEY=58c5ccc392b8ede21738a4db52109fe7adc9c407d20504dcd5388999d36b86f8c5de538aa96cb917c221df10ba1a56f3235c8651fa7e6e6994e8ca2a6daeaf60
