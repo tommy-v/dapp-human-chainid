@@ -3,3 +3,4 @@
 /front/node_modules
 /blockchain/build/
 /front/build/
+/front/build_webpack/
